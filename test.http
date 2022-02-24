@@ -1,0 +1,44 @@
+
+//vraca sve rez
+GET http://localhost/sminka/public/api/rez HTTP/1.1
+
+###
+//radi pretragu rez po imenu, skup karaktera se trazi
+GET http://localhost/sminka/public/api/rez/search/A HTTP/1.1
+###
+//unosi novu rez
+POST http://localhost/sminka/public/api/rez HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+"ime":"Ma",
+"prezime":"Ia",
+"datum_zakazivanja":"2021-02-01",
+ "vreme": "16:00",
+"studio":"Imported",
+ "sminker_id": "1",
+"user_id":"1"
+}
+
+
+
+###
+###
+//menja rez sa indexom 1
+PUT http://localhost/sminka/public/api/rez/1
+Content-Type: application/json
+Accept: application/json
+
+{
+"ime":"Ilija"
+}
+###
+//brise rez sa indexom 1
+DELETE http://localhost/sminka/public/api/rez/1
+
+###
+//get prikazuje samo 1 rez
+ GET  http://localhost/sminka/public/api/rez/1
+
+ ###
