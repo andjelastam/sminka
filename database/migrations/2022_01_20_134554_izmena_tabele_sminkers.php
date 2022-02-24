@@ -13,15 +13,15 @@ class IzmenaTabeleSminkers extends Migration
      */
     public function up()
     {
-        // Schema::table('sminkers',function (Blueprint $table){
-        //     $table->renameColumn('brend','BREND');
-        // });
-        // Schema::table('sminkers', function (Blueprint $table) {
-        //     $table->string('ime', 50)->change();
-        // });
-        // Schema::table('sminkers',function (Blueprint $table){
-        //     $table->string('test');
-        // });
+       //  Schema::table('sminkers',function (Blueprint $table){
+       //      $table->renameColumn('brend','BREND');
+       //  });
+       //  Schema::table('sminkers', function (Blueprint $table) {
+      //       $table->string('ime', 50)->change();
+       //  });
+      //   Schema::table('sminkers',function (Blueprint $table){
+      //      $table->string('test');
+      //   });
     }
 
     /**
@@ -31,9 +31,9 @@ class IzmenaTabeleSminkers extends Migration
      */
     public function down()
     {
-        // Schema::table('sminkers',function (Blueprint $table){
+       //  Schema::table('sminkers',function (Blueprint $table){
         //     $table->dropColumn('test');
         //   $table->renameColumn('BREND','brend');
-        //   });
+    //   });
     }
 }
